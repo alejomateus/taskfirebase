@@ -9,7 +9,7 @@ import { ConexionService} from './../../services/conexion.service'
 export class ListComponent implements OnInit {
 	items:any;
   constructor(private conexion: ConexionService) { 
-  	this.conexion.listaItem().subscribe(item=>{
+  	this.conexion.listItem().subscribe(item=>{
   		this.items = item;
   		console.log(this.items);
   	});

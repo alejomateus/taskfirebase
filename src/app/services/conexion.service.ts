@@ -18,9 +18,12 @@ export class ConexionService {
 				return { id, ...data };
 			}))
 			);
-		
+
 	}
-	listaItem(){
+	listItem(){
 		return this.items;
+	}
+	addItem(item: Item) {
+		this.itemsCollection.add(item);
 	}
 }

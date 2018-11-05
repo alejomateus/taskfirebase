@@ -9,7 +9,7 @@ import { environment } from '../environments/environment';
 import { ConexionService} from './services/conexion.service';
 import { ListComponent } from './components/list/list.component';
 import { FormaddComponent } from './components/formadd/formadd.component';
-
+import { FormsModule }from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,6 +19,7 @@ import { FormaddComponent } from './components/formadd/formadd.component';
   ],
   imports: [
   BrowserModule,
+  FormsModule
   AngularFireModule.initializeApp(environment.firebase),
   AngularFirestoreModule, // imports firebase/firestore, only needed for database features
   AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
