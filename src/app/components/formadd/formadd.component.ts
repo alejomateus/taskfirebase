@@ -8,7 +8,7 @@ import { ConexionService} from './../../services/conexion.service'
 })
 export class FormaddComponent implements OnInit {
 	item:any={
-		name:"";
+		name:""
 	}
 	constructor(private service: ConexionService) { }
 
